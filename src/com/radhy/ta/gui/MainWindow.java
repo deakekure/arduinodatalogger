@@ -5,9 +5,8 @@
 package com.radhy.ta.gui;
 
 import com.radhy.ta.ApplicationException;
-import com.radhy.ta.data.DataCollectingWorker;
 import com.radhy.ta.data.DataContainer;
-import com.radhy.ta.data.OptimizedDataCollector;
+import com.radhy.ta.data.SwingDataCollector;
 import com.radhy.ta.data.SimpleData;
 import java.awt.Color;
 import java.util.List;
@@ -21,7 +20,7 @@ import java.util.logging.Logger;
 public class MainWindow extends javax.swing.JFrame {
     private static final Logger LOGGER = Logger.getLogger(MainWindow.class.getSimpleName());
     
-    private OptimizedDataCollector dataCollector;
+    private SwingDataCollector dataCollector;
     private DataContainer dataContainer;
     
     /**
@@ -73,7 +72,7 @@ public class MainWindow extends javax.swing.JFrame {
         pack();
     }
     
-    public void setDataCollector(OptimizedDataCollector dataCollector) {
+    public void setDataCollector(SwingDataCollector dataCollector) {
         this.dataCollector = dataCollector;
     }
     
@@ -96,27 +95,27 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        menuBar = new javax.swing.JMenuBar();
+        fileMenu = new javax.swing.JMenu();
+        editMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridLayout(3, 1));
 
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
+        fileMenu.setText("File");
+        menuBar.add(fileMenu);
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        editMenu.setText("Edit");
+        menuBar.add(editMenu);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(menuBar);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu editMenu;
+    private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenuBar menuBar;
     // End of variables declaration//GEN-END:variables
 }

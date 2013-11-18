@@ -1,1 +1,2 @@
 com.radhy.ta.data.source.SocketDataSourceFactory
+com.radhy.ta.data.source.SerialDataSourceFactory

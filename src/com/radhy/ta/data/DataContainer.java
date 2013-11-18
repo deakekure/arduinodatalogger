@@ -13,7 +13,8 @@ import java.util.List;
 import java.util.Set;
 
 /**
- *
+ * Data container.
+ * 
  * @author zakyalvan
  */
 public class DataContainer implements Iterable<SimpleData> {

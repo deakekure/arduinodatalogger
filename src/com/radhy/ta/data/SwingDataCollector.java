@@ -16,15 +16,15 @@ import javax.swing.SwingWorker;
  *
  * @author zakyalvan
  */
-public class OptimizedDataCollector extends SwingWorker<Void, Integer> {
-    private static final Logger LOGGER = Logger.getLogger(OptimizedDataCollector.class.getSimpleName()); 
+public class SwingDataCollector extends SwingWorker<Void, Integer> {
+    private static final Logger LOGGER = Logger.getLogger(SwingDataCollector.class.getSimpleName()); 
     
     private DataSource dataSource;
     private DataContainer dataContainer;
     
     private boolean started = false;
     
-    public OptimizedDataCollector(DataSource dataSource) {
+    public SwingDataCollector(DataSource dataSource) {
         this.dataSource = dataSource;
         this.dataContainer = DataContainer.getInstance();
     }

@@ -5,7 +5,6 @@
 package com.radhy.ta.data.source;
 
 import com.radhy.ta.ApplicationException;
-import com.radhy.ta.data.SocketDataCollector;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.logging.Logger;

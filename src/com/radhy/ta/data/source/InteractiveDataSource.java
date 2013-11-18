@@ -8,8 +8,7 @@ import com.radhy.ta.ApplicationException;
 import java.io.OutputStream;
 
 /**
- * Saya bingung milih namanya, intinya ini adalah kontrak untuk kelas object datasource
- * yang dapat dikirimi perintah (lewat OutputStream).
+ * Data source yang memungkinkan user mengirim perintah atau command.
  * 
  * @author zakyalvan
  */

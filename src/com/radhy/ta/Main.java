@@ -6,7 +6,7 @@ package com.radhy.ta;
 
 import com.jgoodies.looks.windows.WindowsLookAndFeel;
 import com.radhy.ta.data.DataContainer;
-import com.radhy.ta.data.OptimizedDataCollector;
+import com.radhy.ta.data.SwingDataCollector;
 import com.radhy.ta.data.source.DataSourceFactory;
 import com.radhy.ta.data.source.DataSourceFactoryProvider;
 import com.radhy.ta.data.source.SocketDataSource;
@@ -53,7 +53,7 @@ public class Main {
 
                     DataSourceFactory dataSourceFactory = DataSourceFactoryProvider.getFactory(SocketDataSource.class);
                     SocketDataSource socketDataSource = (SocketDataSource) dataSourceFactory.create();
-                    OptimizedDataCollector dataCollector = new OptimizedDataCollector(socketDataSource);
+                    SwingDataCollector dataCollector = new SwingDataCollector(socketDataSource);
 
                     DataContainer dataContainer = dataCollector.getDataContainer();
 
